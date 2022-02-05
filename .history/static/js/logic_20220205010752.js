@@ -59,8 +59,7 @@ let cities = [{
   ];
 
 // Loop through the cities array and create one marker for each city.
-cities.forEach(function(x) {
-    const {city, location}=x
-    console.log(x)
-    L.marker(location).addTo(map);
+cities.forEach(function(city) {
+    console.log(city)
+    L.marker(city.location).addTo(map);
 });

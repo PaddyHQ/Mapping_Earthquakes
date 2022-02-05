@@ -57,10 +57,3 @@ let cities = [{
     population: 1660272
   }
   ];
-
-// Loop through the cities array and create one marker for each city.
-cities.forEach(function(x) {
-    const {city, location}=x
-    console.log(x)
-    L.marker(location).addTo(map);
-});
